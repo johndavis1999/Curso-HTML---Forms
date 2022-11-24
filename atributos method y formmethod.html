@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		form{
+			width: 400px;
+			padding: 10px;
+			margin: 5px;
+			border: 1px solid gray;
+		}
+	</style>
+</head>
+<body>
+	<form action="procesar-datos-2.html" target="_blank" method="post">
+		<fieldset>
+			<legend>Formulario</legend>
+			<table>
+				<tr>
+					<td><label for="Nombre">Nombre: </label></td>
+					<td><input type="text" name="Nombre"></td>
+				</tr>
+				<tr>
+					<td><label for="email">Email: </label></td>
+					<td><input type="email" name="email"></td>
+				</tr>
+			</table>
+			<label>
+				Estoy de acuerdo
+				<input type="radio" name="condiciones" value="si">
+			</label>
+			<label>
+				No estoy de acuerdo
+				<input type="radio" name="condiciones" value="no">
+			</label>
+			<input type="submit" formmethod="get">
+		</fieldset>
+	</form>
+</body>
+</html>
